@@ -6,9 +6,7 @@ Based on [char-rnn-tensorflow](https://github.com/sherjilozair/char-rnn-tensorfl
 
 ## Requirements
 
-- Set up a python environment with tensorflow installed. [More detailed instructions here](../)
-
-- If you are familiar with Docker, you can also use this  ~~[container]()~~ (soon!)
+- Set up a python environment with tensorflow installed. 
 
 ## Usage
 

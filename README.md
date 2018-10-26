@@ -1,5 +1,5 @@
 # Training a LSTM network and using the model in ml5js
-# Tutorial from ml5.js (with some adjustments)
+#### LSTM tutorial from ml5.js (with some adjustments): https://github.com/ml5js/training-lstm
 
 Multi-layer Recurrent Neural Networks (LSTM, RNN) for character-level language models in Python using Tensorflow and modified to work with [tensorflow.js](https://js.tensorflow.org/) and [ml5js](https://ml5js.org/)
 
@@ -31,6 +31,8 @@ Once your data is ready, create a new folder in the `root` of this project and i
 _(A quick tip to concatenate many small disparate `.txt` files into one large training file: `ls *.txt | xargs -L 1 cat >> input.txt`)_
 
 ### 2) Train
+
+#### **IMPORTANT** If 'data.npy' and 'vocab.pkl' exist in your 'data' folder, delete them before training the model with new input!
 
 Run the training script with the default settings: 
 
@@ -64,8 +66,6 @@ python train.py --data_dir=./bronte \
 --save_checkpoints ./checkpoints \
 --save_model ./models
 ```
-
-#### **IMPORTANT** If 'data.npy' and 'vocab.pkl' exist in your 'data' folder, delete them before training the model with new input!
 
 ### 3) Use it!
 

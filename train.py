@@ -32,7 +32,7 @@ tf.logging.set_verbosity(tf.logging.ERROR)
 def main():
     parser = argparse.ArgumentParser(
                         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument('--data_dir', type=str, default='./littleprince',
+    parser.add_argument('--data_dir', type=str, default='./data',
                         help='data directory containing input.txt')
     parser.add_argument('--save_model', type=str, default='models',
                         help='directory to store the ml5js model')

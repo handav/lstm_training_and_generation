@@ -6,7 +6,7 @@ var all_generations = [];
 
 function preload() {
     // Create the LSTM Generator with a pre trained model
-    lstm = ml5.LSTMGenerator('../models/littleprince/');
+    lstm = ml5.LSTMGenerator('../models/cheb/');
     console.log(lstm);
 }
 

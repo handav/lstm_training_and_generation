@@ -1,8 +1,11 @@
 # Training a LSTM network and using the model in ml5js
+# Tutorial from ml5.js (with some adjustments)
 
 Multi-layer Recurrent Neural Networks (LSTM, RNN) for character-level language models in Python using Tensorflow and modified to work with [tensorflow.js](https://js.tensorflow.org/) and [ml5js](https://ml5js.org/)
 
 Based on [char-rnn-tensorflow](https://github.com/sherjilozair/char-rnn-tensorflow).
+
+More resources at the bottom of this readme.
 
 ## Requirements
 
@@ -62,6 +65,8 @@ python train.py --data_dir=./bronte \
 --save_model ./models
 ```
 
+#### **IMPORTANT** If 'data.npy' and 'vocab.pkl' exist in your 'data' folder, delete them before training the model with new input!
+
 ### 3) Use it!
 
 Once the model is ready, you'll just need to point to it in your ml5 sketch:
@@ -69,8 +74,11 @@ Once the model is ready, you'll just need to point to it in your ml5 sketch:
 ```javascript
 const lstm = new ml5.LSTMGenerator('./models/your_new_model');
 ```
-
 That's it!
+
+## More resources
+
+https://ml5js.org/docs/LSTMGenerator
 
 ## Hyperparameters
 

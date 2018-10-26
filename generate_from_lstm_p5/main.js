@@ -6,7 +6,7 @@ var all_generations = [];
 
 function preload() {
     // Create the LSTM Generator with a pre trained model
-    lstm = ml5.LSTMGenerator('../models/spanish_input/');
+    lstm = ml5.LSTMGenerator('../models/littleprince/');
     console.log(lstm);
 }
 
@@ -24,7 +24,7 @@ function draw() {
 function keyPressed() {
     // Generete content
     lstm.generate({
-        seed: 'the meaning of pizza is',
+        seed: 'a',
         length: 60,
         temperature: 0.5
     }, function(results) {

@@ -70,5 +70,5 @@ Then you're all set!
 
 Email ahandvanish@gmail.com with any questions!
 
-Installation instructions based on https://ml5js.org/docs/training-setup.html
+Installation instructions based on https://ml5js.org/docs/training-setup.html.
 

@@ -2,3 +2,8 @@
 .DS_Store
 __pycache__
 *.pyc
+lstm/data/data.npy
+lstm/data/vocab.pkl
+logs/
+lstm/models/data/*
+lstm/checkpoints/*

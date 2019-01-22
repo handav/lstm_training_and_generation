@@ -32,7 +32,7 @@ _(A quick tip to concatenate many small disparate `.txt` files into one large tr
 
 ### 2) Train
 
-#### **IMPORTANT** If 'data.npy' and 'vocab.pkl' exist in your 'data' folder, delete them before training the model with new input!
+#### **IMPORTANT** If 'data.npy' and 'vocab.pkl' exist in your '/checkpoints/data' folder, delete them before training the model with new input!
 
 Run the training script with the default settings: 
 

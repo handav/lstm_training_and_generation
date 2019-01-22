@@ -2,12 +2,12 @@
 
 ## About this repo
 
-In this repo there are three folders:
+In this repo there are four folders:
 
-1) A process_midi folder with a script to show you how to get notes from a MIDI file (optional, only if you're working with MIDI - see below)
+1) (Optional) A process_midi folder with a script to show you how to get notes from a MIDI file (only if you're working with MIDI - see below)
 2) The main folder, lstm, trains a model on lyrics or MIDI notes using Python and Tensorflow
 3) A p5 sketch to generate from a trained model
-4) A Python script to create a MIDI file from generated MIDI notes (optional) 
+4) (Optional) A Python script to create a MIDI file from generated MIDI notes 
 
 Don't worry about digging into these just yet - we'll go through these in the workshop. For now, please read the following installation instructions and bring your computer with these ready to go.
 
@@ -27,8 +27,6 @@ If you don't want to bring your own data, a cleaned dataset of David Bowie lyric
 The LSTM code needs two things to run: Tensorflow and Python. 
 
 This tutorial has been tested and works with Python version 3.6.
-
-We are basically following the instructions in the link below to install Tensorflow, create a Python environment, and install Python requirements. **However**, there are a few changes, so please read the instructions below .
 
 ### Install Miniconda:
 

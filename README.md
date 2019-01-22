@@ -13,7 +13,7 @@ Don't worry about digging into these just yet - we'll go through these in the wo
 
 ## Bring your data! (optional, otherwise a cleaned lyrics dataset will be provided)
 
-You can get lyrics or MIDI data anywhere online. The more you get, the better the model will be, but for the purposes of this workshop any amount will do (you can always add more and re-train it later). If you want to download a ton of data, you can get the lyrics of over 55,000 songs here (requires an account): https://www.kaggle.com/mousehead/songlyrics/version/1. You can open up the .csv file and copy lyrics from the "text" column. 
+You can get lyrics or MIDI files anywhere online. The more you get, the better the model will be, but for the purposes of this workshop any amount will do (you can always add more and re-train it later). If you want to download a ton of data, you can get the lyrics of over 55,000 songs here (requires an account): https://www.kaggle.com/mousehead/songlyrics/version/1. You can open up the .csv file and copy lyrics from the "text" column. 
 
 The lyrics should be in one input.txt files in your 'data' folder. If you have many text files, you can concatenate them all together by typing this command into terminal: ```ls *.txt | xargs -L 1 cat >> input.txt``` Everything in this file will be fed into the model, so you should delete any unnecessary information (like url links, for example).
 

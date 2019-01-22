@@ -61,7 +61,9 @@ This should put (ml5) in parenthesis at the beginning of your terminal line.
 ### Install modules
 
 ```pip install numpy==1.10.4```
+
 ```pip install scipy==0.17.0```
+
 ```pip install tensorflow==1.0.0```
 
 Then you're all set!

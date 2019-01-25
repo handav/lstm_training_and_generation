@@ -12,5 +12,8 @@ To run this program, type this into terminal:
 python create_midi.py
 ```
 
+I recommend downloading MuseScore (https://musescore.org/en) to view and play your MIDI.
+
 Midiutil documentation:
 https://media.readthedocs.org/pdf/midiutil/latest/midiutil.pdf
+

@@ -11,7 +11,7 @@ def compose_midi(text):
     midi_file.addTempo(track, time, tempo)
     
     for item in text.split():
-        print list(item)
+        print(list(item))
         note = ''.join(list(item)[:2])
         note = int(note)
         # If your encoding has a duration, you can add that here. Otherwise, default is 1.0, or a quarter note
@@ -25,7 +25,7 @@ def save_midi(cleaned_tweet, midi_file):
     filename = 'sample_output.mid'
     with open(filename, 'wb') as output_file:
         midi_file.writeFile(output_file)
-        print 'midi file saved'
+        print('midi file saved')
 
 with open('./output/generated.txt', 'r') as input_file:
     notes = input_file.read()

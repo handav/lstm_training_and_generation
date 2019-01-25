@@ -1,6 +1,12 @@
 To start the p5 sketch, navigate to the 'generate_from_lstm_p5' folder and type: 
 
+For Python 2:
+
 ```python -m SimpleHTTPServer```
+
+For Python 3:
+
+```python -m http.server```
 
 Then in your browser, navigate to localhost:8000.
 

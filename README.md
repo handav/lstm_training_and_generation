@@ -2,12 +2,13 @@
 
 ## About this repo
 
-In this repo there are four folders:
+In this repo there are five folders:
 
 1) (Optional) A process_midi folder with a script to show you how to get notes from a MIDI file (only if you're working with MIDI - see below)
-2) The main folder, lstm, trains a model on lyrics or MIDI notes using Python and Tensorflow
-3) A p5 sketch to generate from a trained model
-4) (Optional) A Python script to create a MIDI file from generated MIDI notes 
+2) (Optional) A folder to show you how to clean lyrics if you're making your own dataset - will need adjusting based on your specific data.
+3) The main folder, lstm, trains a model on lyrics or MIDI notes using Python and Tensorflow
+4) A p5 sketch to generate from a trained model
+5) (Optional) A Python script to create a MIDI file from generated MIDI notes 
 
 Don't worry about digging into these just yet - we'll go through these in the workshop. For now, please read the following installation instructions and bring your computer with these ready to go.
 

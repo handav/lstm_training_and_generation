@@ -15,35 +15,29 @@ More resources at the bottom of this readme.
 
 ### 1) Download this repository
 
-Start by [downloading](https://github.com/ml5js/training-lstm) or cloning this repository:
+Start by cloning this repository (https://github.com/handav/lstm_training_and_generation):
 
 ```bash
-git clone https://github.com/ml5js/training-lstm.git
+git clone https://github.com/handav/lstm_training_and_generation
 cd training-lstm
 ```
 
-### 2) Collect data
-
-LSTMs work well when you want predict sequences or patterns from your inputs. Try to gather as much input data as you can. The more the better. 
-
-Once your data is ready, create a new folder in the `root` of this project and inside that folder you should have one file called `input.txt` that contains all your training data.
-
-_(A quick tip to concatenate many small disparate `.txt` files into one large training file: `ls *.txt | xargs -L 1 cat >> input.txt`)_
-
 ### 2) Train
 
-#### **IMPORTANT** If 'data.npy' and 'vocab.pkl' exist in your '/checkpoints/data' folder, delete them before training the model with new input!
+#### **IMPORTANT** If 'data.npy' and 'vocab.pkl' exist in your '/data' folder, delete them before training the model with new input!
 
 Run the training script with the default settings: 
 
 ```bash
-python train.py --data_dir=./folder_with_my_custom_data
+python train.py --data_dir=./data
 ```
+
+This should take about 5-10 minutes for the David Bowie lyrics, and about 1 min for the Twinkle Twinkle MIDI.
 
 Or you can specify the hyperparameters you want depending on the training set, size of your data, etc:
 
 ```bash
-python train.py --data_dir=./folder_with_my_custom_data --rnn_size 128 --num_layers 2 --seq_length 64 --batch_size 32 --num_epochs 1000 --save_model ./models --save_checkpoints ./checkpoints
+python train.py --data_dir=./data --rnn_size 128 --num_layers 2 --seq_length 64 --batch_size 32 --num_epochs 1000 --save_model ./models --save_checkpoints ./checkpoints
 ```
 
 This will train your model and save a JavaScript version **in a folder called `./models`**, if you don't specify a different path.
@@ -56,8 +50,8 @@ bash run.sh
 
 This file contains the same parameters as the one's described before:
 ```bash
-# This are the hyperparameters you can change to fit your data
-python train.py --data_dir=./bronte \
+# These are the hyperparameters you can change to fit your data
+python train.py --data_dir=./data \
 --rnn_size 128 \
 --num_layers 2 \
 --seq_length 50 \

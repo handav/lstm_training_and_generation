@@ -14,8 +14,8 @@ def compose_midi(text):
         print list(item)
         note = ''.join(list(item)[:2])
         note = int(note)
-        duration = ''.join(list(item)[2:])
-        duration = float(duration)
+        # If your encoding has a duration, you can add that here. Otherwise, default is 1.0, or a quarter note
+        duration = 1.0
         midi_file.addNote(track, channel, note, time, duration, volume)
         time = time + duration
     
@@ -27,7 +27,7 @@ def save_midi(cleaned_tweet, midi_file):
         midi_file.writeFile(output_file)
         print 'midi file saved'
 
-with open('./output/notes.txt', 'r') as input_file:
+with open('./output/generated.txt', 'r') as input_file:
     notes = input_file.read()
     midi_file = compose_midi(notes)
     save_midi(notes, midi_file)

@@ -6,7 +6,8 @@ var all_generations = [];
 
 function preload() {
     // Create the LSTM Generator with a pre trained model
-    lstm = ml5.LSTMGenerator('../models/cheb/');
+    // Put your model here!
+    lstm = ml5.LSTMGenerator('../models/twinkle/');
     console.log(lstm);
 }
 
@@ -34,6 +35,6 @@ function keyPressed() {
     });
     if (keyCode === ENTER) {
         console.log('saving file');
-        saveStrings(all_generations, 'notes.txt');
+        saveStrings(all_generations, 'generated.txt');
     }
 }

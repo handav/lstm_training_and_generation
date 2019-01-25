@@ -56,9 +56,15 @@ If it prints out some stuff then it has installed correctly
 
 ```conda create -n ml5 python=3.5.2```
 
+You've now created a new environment named m15. To activate it, run
+
+```conda activate m15```
+
 This should put (ml5) in parenthesis at the beginning of your terminal line.
 
 ### Install modules
+
+You'll install a few python modules inside this environment. 
 
 ```pip install numpy==1.10.4```
 
